@@ -5,4 +5,5 @@ import com.tauheedid.data.source.remote.QuranService
 import javax.inject.Inject
 
 class QuranRepositoryImpl @Inject constructor(private val quranService: QuranService) {
+    suspend fun getQuranTableOfContent() = quranService.getQuranTableOfContent()
 }
